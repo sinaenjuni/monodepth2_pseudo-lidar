@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--image_path", "/Users/shinhyeonjun/code/ad-5-final-project-team5/data/monodepth2/000000.png",
+                "--calib_path", "/Users/shinhyeonjun/dataset/data_object_calib/training/calib/000000.txt",
+                "--output_path", "./results/",
+                "--model_name", "stereo_1024x320",
+                "--cuda"
+            ]
+        }
+    ]
+}
