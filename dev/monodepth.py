@@ -12,7 +12,7 @@ class Monodepth():
         assert args.model_name is not None, \
             "You must specify the --model_name parameter; see README.md for an example"
 
-        if torch.cuda.is_available() and not args.cuda:
+        if torch.cuda.is_available() and args.cuda:
             self.device = torch.device("cuda")
         else:
             self.device = torch.device("cpu")
